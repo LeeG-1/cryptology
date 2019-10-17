@@ -17,8 +17,8 @@ def str_to_ASCII(string):
 
 if __name__ == '__main__':
     # hash('test')==f2c01fe71e407f888399b0373c86576807dd07341d35f16194b58b07ee510a58
-    # strA='password'
-    # strSecond='RomanovS'
+    # strA='88888888'
+    # strSecond='12341234'
 
     strA = input('please input string to sm3:')  # 输入secret的值，后面计算中secret当做未知，仅知道其长度和hash值
     strSecond = input('please input second part message:')  # 输入第二轮计算的字符串
