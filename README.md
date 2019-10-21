@@ -14,4 +14,4 @@ SM3(IV, salt+data+padding+append) = SM3(SM3(IV, salt+data), append)。
 
 之所以要知道salt的长度，是为了确保salt+data+padding+append和攻击者输入的data拥有相同的填充，以确保最后一步的运算得到相同的结果。
 
-SM4可逆性证明：轮秘钥逆用即可。
+SM4可逆性证明：轮密钥逆用即可。
