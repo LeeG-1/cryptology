@@ -2,7 +2,7 @@
 
 cryptology homework
 
-SM3哈希函数的长度扩展攻击
+一丶SM3哈希函数的长度扩展攻击
 长度扩展攻击（length extension attack），是指针对某些允许包含额外信息的加密散列函数的攻击手段。对于满足以下条件的散列函数，都可以作为攻击对象：
 ① 加密前将待加密的明文按一定规则填充到固定长度（例如512或1024比特）的倍数；
 ② 按照该固定长度，将明文分块加密，并用前一个块的加密结果，作为下一块加密的初始向量（Initial Vector）。
@@ -14,4 +14,12 @@ SM3(IV, salt+data+padding+append) = SM3(SM3(IV, salt+data), append)。
 
 之所以要知道salt的长度，是为了确保salt+data+padding+append和攻击者输入的data拥有相同的填充，以确保最后一步的运算得到相同的结果。
 
-SM4可逆性证明：轮密钥逆用即可。
+
+
+二丶SM4可逆性证明：轮密钥逆用即可。
+
+
+三丶DDT和LAT，代码实现和S0和S1对应的表在.txt文件中，以及设计思路的pdf和问题二的pdf
+
+
+
